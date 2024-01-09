@@ -71,7 +71,7 @@ Now, you have a full shell.
 
 ![stable](https://github.com/0x7ax/Bizness/assets/91915054/cc9eb29b-ce87-4b0a-ae0f-ad475c522e57)
 
-We have spawn in /opt/ofbiz, which is an interesting directory, but first let's grab user.txt from /home/ofbiz
+We have spawned in /opt/ofbiz, which is an interesting directory, but first let's grab user.txt from /home/ofbiz
 
 a quick command tells us that only ofbiz and root have shells so it only makes sense that ofbiz has the user.txt file
 
