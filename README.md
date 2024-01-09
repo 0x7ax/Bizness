@@ -43,6 +43,10 @@ I found an exploit online that will run a command on the vulnerable service, hop
 
 I used [exploit.py](exploit.py), creds go to the owner. 
 
+You will need to have `ysoserial-all.jar` in the current directory for the exploit to work.
+
+`$ wget https://github.com/frohoff/ysoserial/releases/latest/download/ysoserial-all.jar`
+
 *Change to your desired ip and port*
 
 - Set up a listener
