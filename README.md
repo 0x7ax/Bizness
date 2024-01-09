@@ -39,7 +39,7 @@ A quick Google search tells us that it's vulnerable to CVE-2023-51467, which is 
 
 # Exploit | Initial foothold
 
-I found an exploit online that will run a command on the infected service, hoping that I can get a reverse shell back 
+I found an exploit online that will run a command on the vulnerable service, hoping that I can get a reverse shell back 
 
 I used [exploit.py](exploit.py), creds go to the owner. 
 
@@ -91,27 +91,27 @@ We found a SHA1 hash: 47ca69ebb4bdc9ae0adec130880165d2cc05db1a
 
 The problem with that hash is that it needs a salt which doesn't appear in the file
 
-With more recon, we found a derby database which has the salt for the hash above
+With more recon, we found an Apache Derby database which has the salt for the hash above
 
 ![derby database](https://github.com/0x7ax/Bizness/assets/91915054/b3e88449-f7be-442b-a060-25044556f1e5)
 
 We can see that the hash for user admin is $SHA$d$uP0_QaVBpDWFeo8-dRzDqRwXQ2I
 
-We can crack this using john or hashcat, but a more effiecient way would be to use a script that encrypts the contents of rockyou.txt and compare it to the string we have
+We can crack this using john or hashcat, but a more efficient way would be to use a script that encrypts the contents of rockyou.txt and compare it to the string we have
 
-For that I used the following python script which I found online: [pass.py](pass.py)
+For that I used the following python script which I found online: [pass.py](pass.py), also credits go to the owner
 
 ![pass.py](https://github.com/0x7ax/Bizness/assets/91915054/9883b0a3-0794-4eec-880a-b26041ff0c44)
 
  We got a hit, *monkeybizness*
  
- Use the following command and enter the password above to privesc to root
+ Use the following command and enter the password above to get root access
  
  `$ su root` 
  
  ![root](https://github.com/0x7ax/Bizness/assets/91915054/b34f5cf9-b38d-45e1-b00a-dd132ac78d69)
  
 # Conclusion
-Bizness was an easy HTB box that has a vulnerable OFbiz platform which leads to RCE. 
+Bizness was an easy HTB box that has a vulnerable OFbiz service which leads to RCE. 
 
 This is for educational purposes only
