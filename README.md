@@ -37,7 +37,7 @@ A quick Google search tells us that it's vulnerable to CVE-2023-51467, which is 
 
 I found an exploit online that will run a command on the infected service, hoping that I can get a reverse shell back 
 
-I used exploit.py script, creds go to the owner. 
+I used [exploit.py](exploit.py), creds go to the owner. 
 
 *Change to your desired ip and port*
 
@@ -95,7 +95,7 @@ We can see that the hash for user admin is $SHA$d$uP0_QaVBpDWFeo8-dRzDqRwXQ2I
 
 We can crack this using john or hashcat, but a more effiecient way would be to use a script that encrypts the contents of rockyou.txt and compare it to the string we have
 
-For that I used the following python script which I found online: pass.py
+For that I used the following python script which I found online: [pass.py](pass.py)
 
 ![pass.py](https://github.com/0x7ax/Bizness/assets/91915054/9883b0a3-0794-4eec-880a-b26041ff0c44)
 
