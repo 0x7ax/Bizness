@@ -1,7 +1,7 @@
 # Bizness
 Hello, today we will be taking on Bizness, an easy box from HTB.
-- [Recon](https://github.com/0x7ax/Bizness/tree/main?tab=readme-ov-file#recon)
-- [Exploit | Initial foothold](https://github.com/0x7ax/Bizness#exploit--initial-foothold)
+- [Recon](https://github.com/0x7ax/Bizness?tab=readme-ov-file#recon)
+- [Exploit | Initial foothold](https://github.com/0x7ax/Bizness?tab=readme-ov-file#exploit--initial-foothold)
 - [Privesc](https://github.com/0x7ax/Bizness?tab=readme-ov-file#privesc)
 - [Conclusion](https://github.com/0x7ax/Bizness?tab=readme-ov-file#conclusion)
 # Recon
