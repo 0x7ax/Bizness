@@ -81,7 +81,7 @@ a quick command tells us that only ofbiz and root have shells so it only makes s
 
 # Privesc
 
-First, I ran linpeas.sh, which didn't tell me much except for the files in /opt/ofbiz
+First, I ran [linpeas.sh](https://github.com/carlospolop/PEASS-ng/tree/31aed5cd927c57d80c91f03a54c15836ad98c506/linPEAS), which didn't tell me much except for the files in /opt/ofbiz
 
 So I digged deeper and found an interesting file that has a SHA1 hash. 
 
